@@ -1,0 +1,231 @@
+:root{
+    --primary-dark: #151442;
+    --primary-light: #fff;
+}
+@font-face {
+    font-family: SailecMedium;
+    src: url(font/SailecMedium.otf);
+}
+@font-face {
+    font-family: SailecThin;
+    src: url(font/SailecThin.otf);
+}
+@font-face {
+    font-family: SailecBold;
+    src: url(font/SailecBold.otf);
+}
+/* common styles */
+* {
+    font-family: SailecMedium;
+}
+body, section{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.badge-dark{
+    background-color: var(--primary-dark);
+}
+.text-thin{
+    font-family: SailecThin;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+button{
+    border-radius: 30px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    padding: 15px 20px;
+    white-space: nowrap;
+}
+
+/* Header */
+#navbar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: var(--primary-dark);
+    font-size: 14px;
+    padding: 15px;
+}
+.navbar a.logo {
+    color: var(--primary-light);
+    font-size: 18px;
+}
+.navbar a.logo:hover {
+    color: var(--primary-light);
+}
+#header.scrolled{
+    background: var(--primary-light);
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+#header.scrolled a{
+    color: var(--primary-dark);
+}
+/* hero header */
+.bg-section{
+    background-color: #102421;
+    color: var(--primary-light);
+}
+.light-green-btn{
+    background-color: #C7E1BF;
+    color: #102522;
+}
+.light-green-btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary-light);
+    color: var(--primary-light);
+}
+.hero-header-img{
+    padding: 90px;
+    margin-left: -176px;
+    position: relative;
+}
+.hero-header-img img{
+   width: 123%;
+}
+.content-vertical-center{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding: 30px;
+    max-width: 560px;
+}
+.content-vertical-center div:first-child{
+    font-family: SailecThin;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+.content-vertical-center div:nth-child(2){
+    font-family: SailecBold;
+    font-size: 88px;
+    line-height: 1.2em;
+}
+.content-vertical-center div:nth-child(3){
+    font-size: 22px;
+}
+/* skincare Product */
+#product-list{
+    padding: 30px 0;
+}
+#product-list h1{
+    color: var(--primary-dark);
+}
+.card{
+    border: none;
+    padding: 30px;
+    text-align: center;
+}
+.btn-light{
+    border: 1px solid #102421;
+    color: var(--primary-dark);
+    margin-left: 40px;
+}
+.btn-light:hover{
+    border: 1px solid #102421;
+    color: var(--primary-dark);
+}
+.btn-light:hover i, .btn-dark:hover i{
+    transform: translate(10px);
+    transition: ease-in-out 0.3s;
+}
+.card-title{
+    color: var(--primary-dark);
+    font-size: 36px;
+}
+.card-img-top{
+    width: 100%;
+    height: 30vh;
+}
+
+/* Vitamins product */
+.btn-dark{
+    background-color: #102421;
+    color: var(--primary-light);
+    margin-left: 40px;
+}
+.btn-dark:hover{
+    background-color: transparent;
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+}
+
+/* benifits */
+#benifits{
+    padding: 60px 0;
+}
+#benifits .card-img-top{
+    width: auto;
+    height: 35px;
+}
+#benifits .card{
+    padding: 30px 90px;
+}
+
+/* footer */
+footer{
+    background-color: #0F2421;
+    color: var(--primary-light);
+    font-size: 14px;
+    padding: 80px;
+}
+footer ul{
+    line-height: 1.9em;
+    font-size: 14px;
+}
+footer ul li{
+    font-family: SailecThin;
+}
+.footer-content{
+    font-family: SailecBold;
+    font-size: 88px;
+    line-height: 1.2em;
+    margin-bottom: 60px;
+}
+/* Testimonial */
+#testimonial{
+    background-image: url(img/testimonial_img.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 30px;
+}
+.author-feed{
+    background: #FFF3F3;
+    padding: 30px;
+    max-width: 500px;
+    display: inline-block;
+    font-size: 30px;
+}
+.testimonial-author{
+    font-size: 14px;
+    text-align: right;
+}
+.testimonial-title{
+    font-family: SailecBold;
+    font-size: 88px;
+    line-height: 1.2em;
+    margin: 0 60px 60px 85px;
+}
+#testimonial a small{
+    text-decoration: underline;
+    margin-left: 85px;
+}
